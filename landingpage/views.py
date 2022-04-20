@@ -4,4 +4,12 @@ from django.http import HttpResponse
 
 # Create your views here.
 def home(request):
-	return HttpResponse('<h1> Index page</h1>')
+	return render(request, 'landingpagedesign/index.html')
+
+
+def register(request):
+	return render(request, 'landingpagedesign/register.html')
+
+
+def login(request):
+	return render(request, 'landingpagedesign/login.html')	

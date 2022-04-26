@@ -5,7 +5,8 @@ urlpatterns = [
     path('admin', admin.site.urls),
     path('dashboard/', include('dashboard.urls')),
     path('', include('landingpage.urls')),
-    path('register/', include('landingpage.urls')),
-    path('login/', include('landingpage.urls')),
+    path('signup/', include('landingpage.urls')),
+    path('signin/', include('landingpage.urls')),
+    path('signout/', include('landingpage.urls')),
 
 ]

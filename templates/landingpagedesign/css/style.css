@@ -60,6 +60,11 @@ body {
     word-spacing: 0px;
 }
 
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
 .dark-scheme {
     color: #9fa4dd;
 }

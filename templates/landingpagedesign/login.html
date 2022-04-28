@@ -158,12 +158,12 @@
 								<div class="col-lg-4 offset-lg-2 wow fadeIn" data-wow-delay=".5s">
 									<div class="box-rounded padding40" data-bgcolor="#ffffff">
 										<h3 class="mb10">Sign In</h3>
-										<p>Login using an existing account or create a new account <a href="../signup">here<span></span></a>.</p>
+										<p>Login using an existing account or create a new account <a href="../accounts/signup"> Signup here<span></span></a>.</p>
 
-										<form  class="form-border" method="post" action='/signin/'>
-                                        {% csrf_token %}
+										<form  class="form-border" method="post" action='signin'>
+                                            {% csrf_token %}
                                             <div class="field-set">
-                                                <input type='email' name='email' id='email' class="form-control" placeholder="Enter Your Email Address">
+                                                <input type='text' name='username' id='username' class="form-control" placeholder="Enter Your Username">
                                             </div>
 											
 											 <div class="field-set">
@@ -171,17 +171,13 @@
                                             </div>
 											
 											<div class="field-set">
-												<button type="Submit" class="btn btn-main btn-fullwidth color-2">Submit</button>
+												<button type="submit" class="btn btn-main btn-fullwidth color-2">Submit</button>
 											</div>
 											
 											<div class="clearfix"></div>
 											
-											<div class="spacer-single"></div>
-
-                                        
-                                        
-                                        
-                                </form>
+											<div class="spacer-single"></div>     
+                                        </form>
 									</div>
 								</div>
 							</div>
